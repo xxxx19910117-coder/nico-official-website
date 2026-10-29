@@ -1,0 +1,109 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="作業療法士・クリエイター「にこ」の公式サイト。美容・育児・暮らしを中心とした動画制作、商品監修、PR・タイアップの実績やサービスをご紹介します。" />
+  <title>NICO OFFICIAL WEBSITE</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@500;600;700&family=Noto+Sans+JP:wght@400;500;600;700&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="style.css" />
+  <style id="hero-layout-overrides">
+    .hero{min-height:min(100vh,900px);padding:112px 8vw 68px;grid-template-columns:minmax(0,45fr) minmax(0,55fr);grid-template-rows:1fr auto;grid-template-areas:"copy collage" "actions collage";column-gap:clamp(32px,5vw,86px)}
+    .hero-copy{grid-area:copy;align-self:end;max-width:540px}.hero-collage{--home-photo-saturation:.82;--home-photo-brightness:1.04;--home-photo-contrast:.95;--home-photo-warmth:.05}.photo-card{overflow:hidden}.photo-card img{display:block;width:100%;height:100%;object-fit:cover;filter:saturate(var(--home-photo-saturation)) brightness(var(--home-photo-brightness)) contrast(var(--home-photo-contrast)) sepia(var(--home-photo-warmth))}.photo-main img{object-position:58% 37%;filter:saturate(.76) brightness(1.02) contrast(.97) sepia(.06)}.photo-product img{object-position:center}.photo-life img{object-position:50% 54%}
+    .hero-collage{grid-area:collage;height:min(68vh,580px);max-width:600px;align-self:center}
+    .hero-actions{grid-area:actions;align-self:start}
+    @media(max-width:800px){.hero{min-height:auto;padding:135px 7vw 72px;display:grid;grid-template-columns:1fr;grid-template-rows:auto auto auto;grid-template-areas:"copy" "collage" "actions";gap:0}.hero-copy{align-self:auto;max-width:none}.hero-collage{height:clamp(320px,105vw,440px);margin:28px 0 0;max-width:520px;align-self:auto}.hero-actions{margin-top:24px;align-self:auto}.hero h1{font-size:clamp(29px,8.7vw,39px);line-height:1.08;letter-spacing:-.06em}.hero h1 em{white-space:nowrap}.hero-lead{font-size:13px}.hero-collage .photo-card{font-size:clamp(18px,5.2vw,21px)}.photo-main{width:65%;height:78%;right:3%;top:4%}.photo-small{width:39%;height:36%}.photo-product{top:0;left:0}.photo-life{bottom:5%;left:0}.collage-note{right:1%;bottom:0;font-size:20px}}
+  </style>
+  <style id="about-overrides">
+    .about-draft{font-size:9px;letter-spacing:.14em;color:#a8796c;margin:24px 0 -8px}.circle-mark{overflow:hidden;position:relative}.circle-mark img{display:block;width:100%;height:100%;object-fit:cover;object-position:50% 38%;filter:saturate(.88) brightness(1.03) contrast(.97) sepia(.03)}.about-instagram{display:inline-flex;align-items:center;margin-top:24px;color:var(--brown);font-size:10px;letter-spacing:.1em;text-decoration:none;border-bottom:1px solid var(--pink);padding-bottom:5px}.about-instagram span{font-size:15px;margin-left:8px}.about-instagram:hover{color:var(--gold)}
+    @media(max-width:800px){.about-copy h3{font-size:clamp(25px,7.5vw,30px);line-height:1.25;letter-spacing:-.03em}.about-copy .placeholder-copy{font-size:13px;line-height:2}.about-instagram{margin-top:20px}}
+  </style>
+  <style id="video-works-overrides">
+    .video-card{overflow:hidden;background:var(--paper)}.video-thumb{display:flex;align-items:center;justify-content:center;position:relative;aspect-ratio:9/16;text-align:center;text-decoration:none;color:rgba(95,75,66,.75);font:22px var(--serif);line-height:1.15;overflow:hidden}.video-thumb img{display:block;width:100%;height:100%;object-fit:contain;background:var(--beige)}.video-thumb small{font-family:var(--sans);font-size:8px;letter-spacing:.18em}.video-thumb-one{background:linear-gradient(150deg,#d2c1b0,#eee4d7)}.video-thumb-two{background:linear-gradient(150deg,#d7c4cd,#ead8d8)}.video-thumb-three{background:linear-gradient(150deg,#c5cdbf,#e3dfd2)}.video-thumb b{position:absolute;right:12px;top:12px;background:rgba(255,252,247,.78);padding:4px 8px;color:var(--brown);font:9px var(--sans);letter-spacing:.12em}.video-thumb.is-disabled,.video-link.is-disabled{cursor:default}.video-link{display:inline-flex;align-items:center;gap:8px;color:var(--brown);text-decoration:none;font-size:10px;border-bottom:1px solid var(--pink);padding-bottom:3px}.video-link b{font-size:8px;font-weight:500;color:#a8796c;letter-spacing:.12em}.video-link span{font-size:15px}.video-card .work-body{padding-bottom:29px}
+    @media(max-width:800px){.works-section .section-heading h2{font-size:clamp(34px,10.5vw,42px);letter-spacing:-.04em;white-space:nowrap}.video-card{width:100%;max-width:360px;margin:0 auto}}
+  </style>
+  <style id="product-works-overrides">
+    .product-section .section-note{text-align:right}.product-intro{display:grid;grid-template-columns:minmax(280px,.85fr) minmax(0,1.15fr);gap:clamp(42px,7vw,100px);align-items:center;margin-top:62px}.product-visual{position:relative;overflow:hidden;border-radius:14px;background:linear-gradient(145deg,#dcc2ae,#f0e5d9);line-height:1.1;text-align:center}.product-visual img{display:block;width:100%;height:auto;border-radius:inherit}.product-visual small{font-family:var(--sans);font-size:8px;letter-spacing:.18em}.product-visual b{position:absolute;top:15px;right:15px;background:rgba(255,252,247,.75);padding:5px 9px;color:var(--brown);font:9px var(--sans);letter-spacing:.12em}.product-copy{max-width:560px}.product-meta{font-size:10px;line-height:2;color:var(--gold);letter-spacing:.12em}.product-copy h3{font:500 clamp(32px,4vw,46px) var(--serif);line-height:1.15;color:var(--brown);margin:19px 0 10px}.product-catch{font:500 18px var(--serif);color:#a77c73;margin:0 0 25px}.product-description{font-size:13px;line-height:2;color:#6e5b53;margin:0}.product-features{display:grid;grid-template-columns:repeat(2,1fr);gap:14px;margin-top:62px}.product-feature{padding:23px 24px;background:rgba(232,222,209,.42);border:1px solid rgba(95,75,66,.12);min-height:150px}.product-feature span{font:17px var(--serif);color:var(--gold)}.product-feature h4{font:500 18px var(--serif);color:var(--brown);margin:8px 0 5px}.product-feature p{font-size:11px;line-height:1.8;color:#725e55;margin:0}.product-feature em{font-style:normal;color:#a77c73}.product-feature strong{font-weight:600;color:var(--brown)}
+    @media(max-width:800px){.product-section .section-note{text-align:left}.product-section .section-heading h2{font-size:clamp(34px,10.5vw,42px);letter-spacing:-.04em;white-space:nowrap}.product-intro{grid-template-columns:1fr;gap:34px;margin-top:38px}.product-visual{max-width:360px;width:100%;margin:0 auto}.product-copy h3{font-size:32px;line-height:1.2;margin-top:15px}.product-catch{font-size:16px;line-height:1.6;margin-bottom:18px}.product-description{line-height:1.9}.product-features{grid-template-columns:1fr;margin-top:24px;gap:10px}.product-feature{min-height:0;padding:16px 18px}.product-feature h4{font-size:17px;margin:6px 0 3px}.product-feature p{font-size:11px;line-height:1.7}}
+  </style>
+  <style id="contact-overrides">
+    .contact-cta{display:flex;flex-direction:column;justify-content:center;min-height:260px}.contact-cta p{font-size:13px;line-height:2;color:#6e5b53;margin:0}.contact-cta .button{align-self:flex-start;margin-top:28px}.contact-email-slot{display:none}
+    @media(max-width:800px){.contact-intro h2{font-size:clamp(38px,10vw,48px);line-height:1.15}.contact-cta{min-height:0}.contact-cta .button{width:100%;margin-top:24px}}
+  </style>
+  <style id="service-cta-overrides">
+    .service-cta{grid-column:2/-1;margin-top:12px}.service-cta p{font-size:11px;color:#725e55;margin:0 0 10px}.service-contact-button{display:inline-flex;align-items:center;gap:8px;background:var(--brown);color:#fffaf4;text-decoration:none;font-size:10px;letter-spacing:.1em;padding:10px 16px}.service-contact-button:hover{background:#3f302a}.service-contact-button span{font-size:15px}
+    @media(max-width:800px){.service-cta{grid-column:2;margin-top:10px}.service-contact-button{min-height:42px;padding:11px 17px}}
+  </style>
+</head>
+<body>
+  <div class="site-shell">
+    <header class="site-header" id="top">
+      <a class="logo" href="#top" aria-label="NICO home"><span>NICO</span><small>official website</small></a>
+      <button class="menu-toggle" type="button" aria-expanded="false" aria-controls="main-nav"><span></span><span></span><span></span><b>MENU</b></button>
+      <nav id="main-nav" class="main-nav" aria-label="メインナビゲーション">
+        <a href="#about">About</a><a href="#video-works">Video works</a><a href="#product-works">Product works</a><a href="#service">Service</a><a class="nav-contact" href="#contact">Contact <span>↗</span></a>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero section-pad reveal" aria-labelledby="hero-title">
+        <div class="hero-copy">
+          <p class="eyebrow"><span>01</span> Beauty · Life · Parenting</p>
+        <h1 id="hero-title">毎日の中にある、<br /><em>小さなときめきを。</em></h1>
+          <p class="hero-lead">美容と暮らし、育児を楽しむ<br />クリエイター「にこ」の公式サイトです。</p>
+        </div>
+        <div class="hero-collage" aria-label="本人・商品・活動写真のコラージュ">
+          <div class="photo-card photo-main"><img src="IMG_2955.jpeg" alt="本人と子どもの写真" /><i>01</i></div>
+          <div class="photo-card photo-small photo-product"><img src="IMG_2944.jpeg" alt="商品写真" /><i>02</i></div>
+          <div class="photo-card photo-small photo-life"><img src="DSC06886.jpeg" alt="活動写真" /><i>03</i></div>
+          <div class="collage-note">gentle<br />and<br />natural</div>
+        </div>
+        <div class="hero-actions"><a class="button button-dark" href="#video-works">実績を見る <span>↓</span></a><a class="button button-line" href="#contact">お問い合わせ <span>↗</span></a></div>
+      </section>
+
+      <section class="intro-ribbon reveal"><p>“好き”をていねいに届ける。</p><span>・</span><p>暮らしに寄り添う発信を。</p></section>
+
+      <section class="section-pad about-section" id="about">
+        <div class="section-heading reveal"><p class="eyebrow"><span>02</span> About NICO</p><h2>私について</h2></div>
+        <div class="about-grid">
+          <div class="about-mark reveal"><div class="circle-mark"><img src="IMG_2954.jpeg" alt="にこのプロフィール写真" /></div><p>nice to meet you</p></div>
+          <div class="about-copy reveal"><p class="section-kicker">活動名　にこ</p><h3>暮らしに寄り添い、<br />「好き」をカタチに。</h3><p class="placeholder-copy">作業療法士としての視点と、母としてのリアルな経験を大切にしながら、美容・暮らし・育児にまつわる情報を発信しています。<br /><br />日常の中で感じる小さな発見や、心地よい暮らしのヒントを、共感できるコンテンツとして届けていきたいと考えています。<br /><br />作業療法士としての専門的な視点と、生活者としてのリアルな感覚を活かし、Instagramでの動画制作や商品監修を通じて、ブランドや商品の魅力を分かりやすく届けています。</p><div class="about-tags"><span>BEAUTY</span><span>LIFE STYLE</span><span>PARENTING</span></div><a class="about-instagram" href="https://www.instagram.com/nico.2525.mama/" target="_blank" rel="noreferrer">Instagramで活動を見る <span>↗</span></a></div>
+        </div>
+      </section>
+
+      <section class="works-section section-pad" id="video-works">
+        <div class="section-heading heading-row reveal"><div><p class="eyebrow"><span>03</span> Video works</p><h2>動画制作実績</h2></div><p class="section-note">美容・暮らし・育児を中心に、<br />企画から編集まで手がけた動画をご紹介します。</p></div>
+        <div class="works-grid">
+          <article class="work-card video-card reveal" data-instagram-url="https://www.instagram.com/reel/DZMj5SfS2Zy/"><a class="video-thumb video-thumb-one" href="https://www.instagram.com/reel/DZMj5SfS2Zy/" target="_blank" rel="noopener noreferrer"><img src="video-work-01.png" alt="ヒップシート紹介動画のサムネイル" /></a><div class="work-body"><p class="work-index">01 / VIDEO</p><h3>ヒップシート紹介動画</h3><p>企画・撮影・編集／にこ</p><p class="video-genre">育児・商品紹介</p><a class="video-link" href="https://www.instagram.com/reel/DZMj5SfS2Zy/" target="_blank" rel="noopener noreferrer">Instagramで動画を見る <span>↗</span></a></div></article>
+          <article class="work-card video-card reveal" data-instagram-url="https://www.instagram.com/reel/DeZMY-gyUEG/"><a class="video-thumb video-thumb-two" href="https://www.instagram.com/reel/DeZMY-gyUEG/" target="_blank" rel="noopener noreferrer"><img src="IMG_2959.jpeg" alt="ナイトルーティン動画のサムネイル" /></a><div class="work-body"><p class="work-index">02 / VIDEO</p><h3>ナイトルーティン動画</h3><p>企画・撮影・編集／にこ</p><p class="video-genre">美容・セルフケア</p><a class="video-link" href="https://www.instagram.com/reel/DeZMY-gyUEG/" target="_blank" rel="noopener noreferrer">Instagramで動画を見る <span>↗</span></a></div></article>
+          <article class="work-card video-card reveal" data-instagram-url="https://www.instagram.com/reel/DcZj5Vmyxgi/"><a class="video-thumb video-thumb-three" href="https://www.instagram.com/reel/DcZj5Vmyxgi/" target="_blank" rel="noopener noreferrer"><img src="IMG_2958.jpeg" alt="スキンケア紹介動画のサムネイル" /></a><div class="work-body"><p class="work-index">03 / VIDEO</p><h3>スキンケア紹介動画</h3><p>企画・撮影・編集／にこ</p><p class="video-genre">美容・スキンケア</p><a class="video-link" href="https://www.instagram.com/reel/DcZj5Vmyxgi/" target="_blank" rel="noopener noreferrer">Instagramで動画を見る <span>↗</span></a></div></article>
+        </div>
+      </section>
+
+      <section class="product-section section-pad" id="product-works">
+        <div class="section-heading heading-row reveal"><div><p class="eyebrow"><span>04</span> Product works</p><h2>商品監修実績</h2></div><p class="section-note">親子の毎日に寄り添う、<br />快適な抱っこを。</p></div>
+        <div class="product-intro">
+          <div class="product-visual reveal"><img src="product-work-01.jpeg" alt="CONYM ヒップシートを使用している様子" /><b>CONYM ヒップシート</b></div>
+          <div class="product-copy reveal"><p class="product-meta">監修者　にこ（作業療法士）<br />実績　　商品監修</p><h3>CONYM<br />ヒップシート</h3><p class="product-catch">親子の毎日に寄り添う、快適な抱っこを。</p><p class="product-description">作業療法士としての専門知識と子育ての経験を活かし、ヒップシートの商品監修に参加しました。</p></div>
+        </div>
+        <div class="product-features">
+          <article class="product-feature reveal"><span>01</span><h4>抱っこの姿勢</h4><p>子どもの股関節や姿勢に配慮した設計</p></article>
+          <article class="product-feature reveal"><span>02</span><h4>身体への負担</h4><p>肩・腰・お腹の3点で荷重を分散する構造</p></article>
+          <article class="product-feature reveal"><span>03</span><h4>使いやすさ</h4><p>子どもの乗せ降ろしや装着のしやすさ</p></article>
+          <article class="product-feature reveal"><span>04</span><h4>機能性</h4><p>抱っこ紐とバッグの2WAY仕様、収納機能</p></article>
+        </div>
+      </section>
+
+      <section class="service-section section-pad" id="service"><div class="section-heading reveal"><p class="eyebrow"><span>05</span> Service</p><h2>できること</h2><p class="section-note">企業さまの想いや商品の魅力を大切に、<br />一つひとつ丁寧にお届けします。</p></div><div class="service-list"><article class="service-item reveal"><span>01</span><h3>動画制作</h3><p>Instagramリールを中心に、企画・撮影・編集まで対応。商品の魅力や暮らしの中での使い心地を、自然体で伝える動画を制作します。</p><b>VIDEO CREATION</b></article><article class="service-item reveal"><span>02</span><h3>商品監修</h3><p>作業療法士としての専門知識と子育ての経験を活かし、商品の使いやすさや機能面について、生活者の視点からアドバイスします。</p><b>PRODUCT SUPERVISION</b></article><article class="service-item reveal"><span>03</span><h3>PR・タイアップ</h3><p>美容・育児・暮らしに関する商品やサービスのPRに対応。実際の使用感や魅力を、フォロワーに伝わりやすい形で発信します。</p><b>PR & COLLABORATION</b><div class="service-cta"><p>お仕事のご相談・ご依頼はこちらから</p><a class="service-contact-button" href="#contact">お問い合わせはこちら <span>↗</span></a></div></article></div></section>
+
+      <section class="contact-section section-pad" id="contact"><div class="contact-intro reveal"><p class="eyebrow"><span>06</span> Contact</p><h2>一緒につくる、<br /><em>心地よい発信。</em></h2><p>動画制作・商品監修・PRなど、<br />お仕事のご相談やご依頼は、<br />InstagramのDMよりお気軽にお問い合わせください。</p><div class="contact-stamp">NICO<br /><small>let's talk</small></div></div><div class="contact-form contact-cta reveal"><div class="form-note">Instagram DMでお問い合わせ</div><p>ご相談内容を確認のうえ、InstagramのDMよりご連絡ください。</p><a class="button button-dark" href="https://www.instagram.com/nico.2525.mama/" target="_blank" rel="noopener noreferrer">Instagramで相談する <span>↗</span></a><div class="contact-email-slot" data-email-contact-slot></div></div></section>
+    </main>
+
+    <footer class="site-footer"><div class="footer-brand"><a class="logo" href="#top"><span>NICO</span><small>official website</small></a><p>美容・暮らし・育児を楽しむ<br />クリエイター にこ</p></div><div class="footer-links"><a href="https://www.instagram.com/nico.2525.mama/" target="_blank" rel="noreferrer">Instagram <span>↗</span></a><a href="#top">Back to top <span>↑</span></a></div><div class="footer-bottom"><p>© NICO OFFICIAL WEBSITE</p></div></footer>
+  </div>
+  <div class="toast" role="status" aria-live="polite">フォームは現在準備中です。</div>
+  <script src="script.js"></script>
+</body>
+</html>
